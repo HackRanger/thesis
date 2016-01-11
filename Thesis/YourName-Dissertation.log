@@ -1,0 +1,73 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdftex 2015.12.25)  4 JAN 2016 16:09
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**YourName-Dissertation.tex
+(./YourName-Dissertation.tex
+! Undefined control sequence.
+l.196 \documentclass
+                    [phd,12pt]{psuthesis}
+? 
+! Undefined control sequence.
+l.200 \usepackage
+                 [T1]{fontenc}
+? 
+! Undefined control sequence.
+l.201 \usepackage
+                 {lmodern}
+? 
+! Undefined control sequence.
+l.202 \usepackage
+                 {textcomp}
+? 
+! Undefined control sequence.
+l.203 \usepackage
+                 {microtype}
+? 
+! Undefined control sequence.
+l.208 \usepackage
+                 {amsmath}
+? 
+! Undefined control sequence.
+l.209 \usepackage
+                 {amssymb}
+? 
+! Undefined control sequence.
+l.214 \usepackage
+                 {eqlist} % Makes for a nice list of symbols.
+? 
+! Undefined control sequence.
+l.215 \usepackage
+                 [final]{graphicx}
+? 
+! Undefined control sequence.
+l.216 \usepackage
+                 [dvipsnames]{color}
+? 
+! Undefined control sequence.
+l.217 \DeclareGraphicsExtensions
+                                {.pdf, .jpg}
+? 
+! Undefined control sequence.
+l.220 \usepackage
+                 {cite}
+? 
+! Undefined control sequence.
+l.222 \usepackage
+                 {titlesec}
+? 
+! Undefined control sequence.
+l.247 \setstretch
+                 {1.24}
+? 
+! I can't find file `{SupplementaryMaterial/UserDefinedCommands}'.
+l.253 ...upplementaryMaterial/UserDefinedCommands}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! Emergency stop.
+l.253 ...upplementaryMaterial/UserDefinedCommands}
+                                                  
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!
