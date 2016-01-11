@@ -1,4 +1,5 @@
-This is BibTeX, Version 0.99c (Web2C 7.5.5)
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: YourName-Dissertation.aux
 A level-1 auxiliary file: Chapter-1/Chapter-1.aux
 A level-1 auxiliary file: Chapter-2/Chapter-2.aux
@@ -7,48 +8,50 @@ A level-1 auxiliary file: Chapter-4/Chapter-4.aux
 A level-1 auxiliary file: Chapter-5/Chapter-5.aux
 A level-1 auxiliary file: Appendix-A/Appendix-A.aux
 A level-1 auxiliary file: Appendix-B/Appendix-B.aux
-The style file: FG-bibstyle.bst
+A level-1 auxiliary file: Appendix-C/Appendix-C.aux
+A level-1 auxiliary file: Appendix-D/Appendix-D.aux
+The style file: GLG-bibstyle.bst
 Database file #1: Biblio-Database.bib
 Warning--empty pages in MitchellRichardson-1999-A-Simplified-Va-0
-You've used 22 entries,
+You've used 21 entries,
             2552 wiz_defined-function locations,
-            736 strings with 9445 characters,
-and the built_in function-call counts, 10313 in all, are:
-= -- 763
-> -- 204
-< -- 23
-+ -- 64
-- -- 42
-* -- 702
-:= -- 1057
-add.period$ -- 44
-call.type$ -- 22
+            732 strings with 9306 characters,
+and the built_in function-call counts, 9951 in all, are:
+= -- 737
+> -- 199
+< -- 22
++ -- 62
+- -- 41
+* -- 679
+:= -- 1018
+add.period$ -- 42
+call.type$ -- 21
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 1104
-empty$ -- 1074
-format.name$ -- 57
-if$ -- 2440
+cite$ -- 22
+duplicate$ -- 1063
+empty$ -- 1034
+format.name$ -- 56
+if$ -- 2354
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 202
-newline$ -- 73
-num.names$ -- 30
-pop$ -- 282
+int.to.str$ -- 21
+missing$ -- 194
+newline$ -- 70
+num.names$ -- 29
+pop$ -- 272
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 397
+skip$ -- 384
 stack$ -- 0
-substring$ -- 576
-swap$ -- 784
-text.length$ -- 23
+substring$ -- 560
+swap$ -- 757
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 68
-width$ -- 24
-write$ -- 211
+while$ -- 65
+width$ -- 23
+write$ -- 202
 (There was 1 warning)

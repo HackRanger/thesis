@@ -4,11 +4,6 @@
 \providecommand{\urlprefix}{URL }
 \providecommand{\eprint}[2][]{\url{#2}}
 
-\bibitem{Melnikov-1963-On-the-Stabilit-a}
-\textsc{Melnikov, V.~K.} (1963) \enquote{On the Stability of the Center for
-  Time-Periodic Perturbations,} \emph{Transactions of the Moscow Mathematical
-  Society}, \textbf{12}, pp. 1--56.
-
 \bibitem{DaviesMoon-1993-3-D-Spatial-Cha-0}
 \textsc{Davies, M.~A.} and \textsc{F.~C. Moon} (1993) \enquote{3-D Spatial
   Chaos in the Elastica and the Spinning Top: Kirchhoff Analogy,} \emph{Chaos},

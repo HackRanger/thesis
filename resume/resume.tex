@@ -1,0 +1,84 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%% ModernCV themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+%% Character encoding
+%\usepackage[utf8]{inputenc}
+
+%% Adjust the page margins
+\usepackage[top=1in, bottom=1in,scale=0.75]{geometry}
+\usepackage{fontawesome}
+
+
+%% Personal data
+\firstname{Subramanya}
+\familyname{Umashankar}
+\address{Michelangelostrasse 1}{01217 Dresden}
+\mobile{+49 151 75232424}
+\email{subbus.joshi@gmail.com}
+\extrainfo{Software Programmer}
+\extrainfo{\faGithub \hspace{0.8pt} \hyperlink{HackRanger}{www.github.com/HackRanger} }
+\photo[64pt][0.4pt]{resumephoto.jpg}
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+\section{Education}
+
+\cventry{2013--Expected April 2016}{MSc, Distributed Systems Engineering}{Technische Universit{\"a}t Dresden}{Dresden, Germany}{}{Defending thesis: ``Elastic Load Scaling for Audio/Video Conferencing Services''}
+\cvline{advisor:}{\small Dr. Kateryna Rybina}
+
+\cventry{2004--2008}{Bachelor of Engineering in Information Science \& Engineering}{Visvesvaraya Technological University}{Karnataka, India}{}{}
+\cvitem{advisor:}{\small Dr. Ravi Kumar V}
+
+\section{Experience}
+
+\cventry{2013--Present}{Werkstudent- Cloud Operations}{Cloud\&Heat Technologies GmbH}{Dresden, Germany}{}{Started with the responsibility of setup monitoring and alerting (Check\_mk a nagios based monitoring software) infrastructure for the cloud. Maintaining day-to-day operations problems in cloud infrastructure. Automating the infrastructure management with Chef and Chef-server. Bare metal provisioning using PXE boot, Cobbler,Bash and Chef. Making Openstack installations for new deployments. Maintaining build infrastructure with jenkins.}
+\cvline{Challenge}{Scalability engineering, Field service engineering}
+
+\cventry{2011--2012}{Senior Engineer- Software, Research \& Development Healthcare}{Philips India}{Bangalore,India}{}{
+Development of Filed Service software for Philips X-ray machines. Migrating the existing use cases from C++ to C\# WPF. Setting up build process and system integration with Jenkins. Framework testing/API testing of Philips Field Service Framework. Maintaining software quality procedures to support FDA Quality System Regulations guidelines. Conducting system testing of software and hardware at Philips Medical Systems Hamburg facility. Successful in setting system's compliance with its business requirements.}
+\cvline{Challenge}{Software engineering for life-critical systems, Development of complex software framework, Reliability engineering}
+
+\cventry{Jul 2010--Oct 2010}{Business Analyst}{Mu-Sigma Business Solutions}{Bangalore, India}{}{
+At Mu-Sigma Business Solutions as part of Innovation and Development team. Setting up Hadoop cluster and Hadoop jobs for real-time analytics for stream of textual data, and Complex data visualisation using R.}
+\cvline{Challenge}{Developing scalable system, statistical data modeling and visualisation.}
+
+\cventry{2008--2010}{Engineer- Software}{SLK-Software Solutions}{Bangalore, India}{}{
+Started working as a junior software developer for Financial domain softwares which includes Banking, Insurance and Investments. After successful completion of training on Silverlight and rich web application, I was responsible for prototyping various parts of the personal financial planner software. Prototyping of various reusable UI components, security features, location based services, deployment challenges of rich web applications and compatibility with mobile/handheld devices. Raising to developer level, I was responsible for requirement analysis and design of point of sales application for art gallery using Microsoft Windows Presentation Framework (WPF) and administration back end using Microsoft Silverlight.}
+\cvline{Challenge}{Developing reusable prototypes, portability for user interface}
+
+\nocite{rybina2015modelling}
+\nocite{subbu2007}
+\bibliographystyle{acm}
+\bibliography{resume}
+
+\section{Technical Experience}
+\subsection{Extremely Proficient With}
+\cvline{languages}{C, Python, C\#, Ruby, R, HTML, CSS, JSON,Java}
+\cvline{technologies}{Apache, Nginx,Django, MySQL, SQLite, Bash Scripting, Git, Vim, Ubuntu \& Red Hat Linux,.NET}
+\cvline{IaaS}{Openstack,Amazon Web Services (AWS)}
+\cvline{PaaS}{Google App Engine, CloudControl, AppElevator}
+\subsection{Have Experience With}
+\cvline{languages}{Javascript,Clojure}
+\cvline{technologies}{SQL Server, Visual Studio, Eclipse}
+
+\section{Relevant Coursework}
+\subsection{Technische Universit{\"a}t Dresden, Dresden}
+\cvline{computer science}{Systems Engineering, Software Fault Tolerance, Dependable Systems, Software Design Patterns \& Frameworks, Security \& Cryptography I,Concurrent and Distributed Systems, Concurrent Data structures and Algorithms}
+\cvline{theoretical computer science}{Complexity theory, Deductive systems, Machine Learning, Knowledge representation and reasoning}
+\subsection{Visvesvaraya Technological University, Karnataka}
+\cvline{computer science}{Programming Languages,Software Engineering, Database systems,Automata Theory, Operating systems, Real-time systems}
+\cvline{business}{Entrepreneurship and business management, Management information systems}
+
+\section{Honors}
+\cvline{Visvesvaraya Technological University}{Best Paper Award at ``Technoblitz 2007 V.V.C.E Mysore'' for the paper ``Page Ranking in Relational Based Search Engine``}
+
+\end{document}

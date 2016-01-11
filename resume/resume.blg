@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: resume.aux
+The style file: acm.bst
+Database file #1: resume.bib
+You've used 2 entries,
+            2253 wiz_defined-function locations,
+            539 strings with 4239 characters,
+and the built_in function-call counts, 807 in all, are:
+= -- 74
+> -- 34
+< -- 0
++ -- 14
+- -- 12
+* -- 56
+:= -- 125
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 12
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 40
+empty$ -- 72
+format.name$ -- 12
+if$ -- 175
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 4
+pop$ -- 19
+preamble$ -- 1
+purify$ -- 10
+quote$ -- 0
+skip$ -- 25
+stack$ -- 0
+substring$ -- 42
+swap$ -- 12
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 0
+while$ -- 7
+width$ -- 3
+write$ -- 23
