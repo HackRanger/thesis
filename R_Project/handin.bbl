@@ -1,0 +1,66 @@
+\begin{thebibliography}{10}
+
+\bibitem{clark2005live}
+C.~Clark, K.~Fraser, S.~Hand, J.~G. Hansen, E.~Jul, C.~Limpach, I.~Pratt, and
+  A.~Warfield, ``Live migration of virtual machines,'' in {\em Proceedings of
+  the 2nd conference on Symposium on Networked Systems Design \&
+  Implementation-Volume 2}, pp.~273--286, USENIX Association, 2005.
+
+\bibitem{strunk2013does}
+A.~Strunk and W.~Dargie, ``Does live migration of virtual machines cost
+  energy?,'' in {\em Advanced Information Networking and Applications (AINA),
+  2013 IEEE 27th International Conference on}, pp.~514--521, IEEE, 2013.
+
+\bibitem{rybina2014analysing}
+K.~Rybina, A.~Patni, and A.~Schill, ``Analysing the migration time of live
+  migration of multiple virtual machines,'' in {\em 4th International
+  Conference on Cloud Computing and Services Science (CLOSER 2014)}, 2014.
+
+\bibitem{voorsluys2009cost}
+W.~Voorsluys, J.~Broberg, S.~Venugopal, and R.~Buyya, ``Cost of virtual machine
+  live migration in clouds: A performance evaluation,'' in {\em Cloud
+  Computing}, pp.~254--265, Springer, 2009.
+
+\bibitem{habib2008virtualization}
+I.~Habib, ``Virtualization with kvm,'' {\em Linux Journal}, vol.~2008, no.~166,
+  p.~8, 2008.
+
+\bibitem{jaleel2010memory}
+A.~Jaleel, ``Memory characterization of workloads using instrumentation-driven
+  simulation,'' {\em Web Copy: http://www. glue. umd. edu/ajaleel/workload},
+  2010.
+
+\bibitem{henning2006spec}
+J.~L. Henning, ``Spec cpu2006 benchmark descriptions,'' {\em ACM SIGARCH
+  Computer Architecture News}, vol.~34, no.~4, pp.~1--17, 2006.
+
+\bibitem{knight2004method}
+R.~P. Knight, ``Method and apparatus for configuring and collecting performance
+  counter data,'' Sept.~14 2004.
+\newblock US Patent 6,792,392.
+
+\bibitem{rybina2013investigation}
+K.~Rybina, W.~Dargie, A.~Strunk, and A.~Schill, ``Investigation into the energy
+  cost of live migration of virtual machines,'' in {\em Sustainable Internet
+  and ICT for Sustainability (SustainIT), 2013}, pp.~1--8, IEEE, 2013.
+
+\bibitem{baron2013probability}
+M.~Baron, {\em Probability and statistics for computer scientists}.
+\newblock CRC Press, 2013.
+
+\bibitem{poellabauer2005feedback}
+C.~Poellabauer, L.~Singleton, and K.~Schwan, ``Feedback-based dynamic voltage
+  and frequency scaling for memory-bound real-time applications,'' in {\em Real
+  Time and Embedded Technology and Applications Symposium, 2005. RTAS 2005.
+  11th IEEE}, pp.~234--243, IEEE, 2005.
+
+\bibitem{kabacoff2011r}
+R.~Kabacoff, {\em R in Action}.
+\newblock Manning Publications Co., 2011.
+
+\bibitem{liu2013performance}
+H.~Liu, H.~Jin, C.-Z. Xu, and X.~Liao, ``Performance and energy modeling for
+  live migration of virtual machines,'' {\em Cluster computing}, vol.~16,
+  no.~2, pp.~249--264, 2013.
+
+\end{thebibliography}

@@ -1,0 +1,102 @@
+README
+
+Description of R scripts:
+
+create_source_dataset.R
+
+This script creats a combined dataframe from data collected from  Intel CPU Counters, Dstat , Pagedirtied during the 
+process for the source machine.
+Column description:
+1. "Benchmark" : Benchmark Name 
+2. "Number" : Migration count 
+3. "StartDateTime" : Start time stamp of this migration 
+4. "EndDateTime" : End time stamp of this migration 
+5. "TotalTime" : Total time for migration , which excludes 30 secs.
+6. "BW" : Bandwidth used for this migration .
+7. "TotalL3Miss" : Total L3 cache misses in this migration.
+8. "TotalINST" : Total Instructions executed in this migration. 
+9. "MAR" : Memory access rate in this migration. i.e  ( total_l3_miss / total_inst_executed)
+10. "CpuUtil" : Mean of CPU utilisation. 
+11. "MemoryBandwidthUsed" : Memory utilization to migrate . 
+12. "AvgROCL3Miss" : Rate of change of L3Miss
+13. "AvgROCPageDirty": Rate of change of page dirty.
+14. "TotalPageDirty" : Total number of page dirtied in this migration.
+15. "PageDirtyPerSecondPerMigration" : Total pages dirtied per total time of migration.
+
+
+crete_vm_dataset.R
+
+This script creats a combined dataframe from data collected from  Dstat , Pagedirtied during the 
+process for the VM.
+Column description:
+1. "Benchmark" : Benchmark Name 
+2. "Number" : Migration count 
+3. "StartDateTime" : Start time stamp of this migration 
+4. "EndDateTime" : End time stamp of this migration 
+5. "TotalTime" : Total time for migration , which excludes 30 secs.
+6. "BW" : Bandwidth used for this migration .
+7. "CpuUtil" : Mean of CPU utilisation. 
+8. "MemoryBandwidthUsed" : Memory utilization to migrate . 
+9. "AvgROCL3Miss" : Rate of change of L3Miss
+10. "AvgROCPageDirty": Rate of change of page dirty.
+11. "TotalPageDirty" : Total number of page dirtied in this migration.
+12. "PageDirtyPerSecondPerMigration" : Total pages dirtied per total time of migration.
+
+create_source_vm_dataset.R
+Combines the Source and VM dataset to produce one big dataset.
+
+create_graphs_migration_time.R
+
+
+predict_migration_time_model.R
+
+Script used for prediction and error calculation.
+
+create_migration_time_models.R
+
+Create a Multi-variable Linear Regression Model for the estimating fit for Total Time of migration for CPU and Memory intensive benchmark.
+
+Model1 :
+
+cpu_fit =  lm(TotalTime ~ TotalL3Miss + TotalINST + MAR + CpuUtil + MemoryBandwidthUsed  + AvgROCL3Miss+ AvgROCPageDirty 
+	+ TotalPageDirty + MAR:CpuUtil,data=cpu_data_set);
+summary(cpu_fit);
+
+#Model for Memory Intensive dataset for source
+memory_fit = lm(TotalTime ~ TotalL3Miss + TotalINST + MAR + CpuUtil + MemoryBandwidthUsed  + AvgROCL3Miss+ AvgROCPageDirty 
+	+ TotalPageDirty + MAR:CpuUtil,data=memory_data_set);
+summary(memory_fit);
+
+Model2 :
+
+#Model for CPU Intensive dataset VM
+vm_cpu_fit =  lm(TotalTime ~ CpuUtil + MemoryBandwidthUsed 
+	+  AvgROCPageDirty + TotalPageDirty+MemoryBandwidthUsed:TotalPageDirty,data=vm_cpu_data_set);
+summary(vm_cpu_fit);
+
+#Model for Memory Intensive dataset VM
+vm_memory_fit = lm(TotalTime ~ CpuUtil + MemoryBandwidthUsed 
+	+ AvgROCPageDirty + TotalPageDirty+MemoryBandwidthUsed:TotalPageDirty,data=vm_memory_data_set);
+summary(vm_memory_fit);
+
+Model3: 
+
+#Model for Combined CPU Intensive dataset
+combined_cpu_fit =  lm(TotalTime ~ CpuUtil + MemoryBandwidthUsed 
+	+  AvgROCPageDirty + TotalPageDirty + VM_TotalPageDirty,data=combined_cpu_data_set);
+summary(combined_cpu_fit);
+
+#Model for Combined Memory Intensive dataset 
+combined_memory_fit = lm(TotalTime ~ CpuUtil + MemoryBandwidthUsed 
+	+ AvgROCPageDirty + TotalPageDirty + VM_TotalPageDirty,data=combined_memory_data_set);
+summary(combined_memory_fit);
+
+Description of Python Scripts:
+
+start_measurements.py
+Script start the beanchmark, start the migration. Start's the measurements of Intel CPU counters, Dstat and Page dirty in Source machine, destination machine and VM. This script will also start the power measurements.
+
+
+start_measurements_without_migration.py
+
+Script start the beanchmark, the VM will not be migrated while benchmark being executed. Start's the measurements of Intel CPU counters, Dstat and Page dirty in Source machine, destination machine and VM. This script will also start the power measurements.

@@ -1,0 +1,154 @@
+
+R version 3.1.2 (2014-10-31) -- "Pumpkin Helmet"
+Copyright (C) 2014 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin13.4.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+Error in library(vimcom) : there is no package called ‘vimcom’
+[R.app GUI 1.65 (6833) x86_64-apple-darwin13.4.0]
+
+[Workspace restored from /Users/subramanya/.RData]
+[History restored from /Users/subramanya/.Rapp.history]
+
+> source("/Users/subramanya/Workspace/LiveMigration/R_Project/create_migration_time_models.R",print.eval=T)
+
+Call:
+lm(formula = TotalTime ~ TotalL3Miss + TotalINST + AvgL3Miss + 
+    AvgINST + MAR + AvgUserSpaceUtil + AvgMemoryUsed + AvgPageDirty + 
+    AvgROCL3Miss + AvgROCPageDirty + TotalPageDirty + MAR:AvgMemoryUsed, 
+    data = cpu_data_set)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.7939 -0.8200  0.0606  0.8013 13.5336 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        2.431e+01  2.140e+00  11.360  < 2e-16 ***
+TotalL3Miss       -5.665e-06  7.315e-07  -7.745 5.87e-13 ***
+TotalINST         -4.706e-03  6.866e-04  -6.854 1.01e-10 ***
+AvgL3Miss          1.457e-07  1.797e-08   8.110 6.53e-14 ***
+AvgINST            1.194e-04  1.577e-05   7.573 1.63e-12 ***
+MAR                8.745e-03  1.711e-03   5.113 7.82e-07 ***
+AvgUserSpaceUtil   6.133e-02  7.027e-02   0.873  0.38391    
+AvgMemoryUsed      3.578e-07  4.972e-08   7.195 1.46e-11 ***
+AvgPageDirty      -1.134e-01  3.551e-02  -3.194  0.00165 ** 
+AvgROCL3Miss      -8.795e+00  9.497e+00  -0.926  0.35558    
+AvgROCPageDirty   -9.293e+01  9.902e+01  -0.938  0.34923    
+TotalPageDirty     3.418e-02  1.075e-02   3.181  0.00172 ** 
+MAR:AvgMemoryUsed -2.569e-10  5.103e-11  -5.033 1.13e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.758 on 187 degrees of freedom
+Multiple R-squared:  0.9995,	Adjusted R-squared:  0.9995 
+F-statistic: 3.121e+04 on 12 and 187 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = TotalTime ~ TotalL3Miss + TotalINST + AvgL3Miss + 
+    AvgINST + MAR + AvgUserSpaceUtil + AvgMemoryUsed + AvgPageDirty + 
+    AvgROCL3Miss + AvgROCPageDirty + TotalPageDirty + MAR:AvgMemoryUsed, 
+    data = memory_data_set)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-171.260   -6.272    0.418    7.833  106.255 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        2.229e+01  1.531e+01   1.456 0.147146    
+TotalL3Miss       -1.676e-05  5.257e-06  -3.188 0.001686 ** 
+TotalINST         -2.505e-02  6.863e-03  -3.650 0.000341 ***
+AvgL3Miss          4.624e-08  4.125e-09  11.209  < 2e-16 ***
+AvgINST            1.069e-04  1.072e-05   9.979  < 2e-16 ***
+MAR                1.508e-02  6.509e-03   2.317 0.021583 *  
+AvgUserSpaceUtil   3.924e+00  7.307e-01   5.371 2.35e-07 ***
+AvgMemoryUsed      1.119e-08  4.085e-07   0.027 0.978172    
+AvgPageDirty       1.455e-01  6.382e-01   0.228 0.819943    
+AvgROCL3Miss       6.038e+02  1.980e+02   3.049 0.002632 ** 
+AvgROCPageDirty   -3.741e+02  2.328e+03  -0.161 0.872479    
+TotalPageDirty     6.080e-01  7.191e-02   8.455 8.40e-15 ***
+MAR:AvgMemoryUsed -7.961e-11  2.471e-10  -0.322 0.747708    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 21.37 on 184 degrees of freedom
+  (3 observations deleted due to missingness)
+Multiple R-squared:  0.9951,	Adjusted R-squared:  0.9947 
+F-statistic:  3086 on 12 and 184 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = TotalTime ~ AvgUserSpaceUtil + AvgMemoryUsed + AvgPageDirty + 
+    AvgROCPageDirty + TotalPageDirty, data = vm_cpu_data_set)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-78.151  -6.515   1.753   9.656  75.333 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       2.603e+01  7.291e+00   3.570  0.00045 ***
+AvgUserSpaceUtil  1.643e-01  1.367e-01   1.202  0.23096    
+AvgMemoryUsed     5.462e-07  1.890e-07   2.891  0.00428 ** 
+AvgPageDirty     -4.678e+00  7.785e-02 -60.085  < 2e-16 ***
+AvgROCPageDirty  -2.213e+03  9.188e+02  -2.409  0.01695 *  
+TotalPageDirty    1.416e+00  2.345e-02  60.402  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 16.96 on 194 degrees of freedom
+Multiple R-squared:  0.9519,	Adjusted R-squared:  0.9506 
+F-statistic: 767.1 on 5 and 194 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = TotalTime ~ AvgUserSpaceUtil + AvgMemoryUsed + AvgPageDirty + 
+    AvgROCPageDirty + TotalPageDirty, data = vm_memory_data_set)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-147.792   -9.949    1.528   13.034  120.553 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      -5.930e+01  1.846e+01  -3.212  0.00155 ** 
+AvgUserSpaceUtil  3.118e-01  3.641e-01   0.856  0.39290    
+AvgMemoryUsed    -9.667e-07  4.279e-07  -2.259  0.02498 *  
+AvgPageDirty      1.859e+00  8.530e-01   2.179  0.03054 *  
+AvgROCPageDirty  -1.392e+03  3.270e+03  -0.426  0.67081    
+TotalPageDirty    1.531e+00  1.533e-02  99.867  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 30.21 on 191 degrees of freedom
+  (3 observations deleted due to missingness)
+Multiple R-squared:  0.9897,	Adjusted R-squared:  0.9895 
+F-statistic:  3685 on 5 and 191 DF,  p-value: < 2.2e-16
+
+quartz_off_screen 
+                2 
+quartz_off_screen 
+                2 
+Warning messages:
+1: In sqrt(crit * p * (1 - hh)/hh) : NaNs produced
+2: In sqrt(crit * p * (1 - hh)/hh) : NaNs produced
+3: In sqrt(crit * p * (1 - hh)/hh) : NaNs produced
+4: In sqrt(crit * p * (1 - hh)/hh) : NaNs produced
+5: In sqrt(crit * p * (1 - hh)/hh) : NaNs produced
+6: In sqrt(crit * p * (1 - hh)/hh) : NaNs produced
+> 
